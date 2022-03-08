@@ -1,32 +1,21 @@
+import portrait from "./portrait.png";
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1 className="text-3xl font-bold underline">Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="container mx-auto pt-10 grid grid-cols-12">
+      <div className="col-span-9">
+        <h1 className="font-serif text-left text-6xl">Andreas Houben</h1>
+        <h2 className="font-serif text-left text-4xl pt-3">
+          Software Engineer
+        </h2>
+      </div>
+      <div className="col-span-3 drop-shadow-2xl outline outline-1 rounded-3xl">
+        <img
+          className="rounded-3xl "
+          src={portrait}
+          alt="Portrait of Andreas Houben"
+        />
+      </div>
     </div>
   );
 }
